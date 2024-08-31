@@ -1,0 +1,43 @@
+$height: 4em;
+.oddBarContainer {
+    display: inline-flex;
+    margin: 1em;
+}
+
+.oddBar {
+    display: inline-flex;
+    height: $height;
+    width: 35em;
+    margin: 0 1em; 
+    background-color: #008000E0;
+    border-radius: 5em;
+    overflow: hidden
+}
+
+.redOdd {
+    background-color: red;
+    height: $height;
+    width: var(--redWidth);
+    transition: width 1s ease-in-out;
+}
+
+.blackOdd {
+    margin-left: auto;
+    height: $height;
+    width: var(--blackWidth);
+    background-color: black;
+    transition: width 1s ease-in-out;
+}
+
+.oddNumbers {
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    display: flex;
+    margin: 0.5em;
+}
+
+.right {
+    justify-content: right;
+}
+

@@ -1,0 +1,53 @@
+$lastnumbersize: 73%;
+
+.lastNumbers {
+    width: $lastnumbersize;
+    display: inline-block;
+}
+
+.img {
+    width: 100% - $lastnumbersize;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4.7em;
+}
+
+.image {
+    width: 100%;
+}
+
+.rotate {
+    animation: rotation 6s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.stat {
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    background-color: #FFFAF920;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font: 2.5em "Arial Black", sans-serif;
+    font-weight: 900;
+    border-top-left-radius: 0.25em;
+    border-top: solid 4px black;
+    border-left: solid 4px black;
+}
+
+.time p {
+    margin: 0 10px;
+}
+  
+

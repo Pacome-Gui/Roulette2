@@ -1,0 +1,110 @@
+.numberContainer {
+  height: 4.5em;
+  width: 4.5em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.2em;
+  background-color: var(--colorNumber);
+  border-radius: 0.75em;
+  margin-top: 8px;
+}
+
+.numberContainer p {
+  color: white;
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.veryLast {
+  height: 9.2em !important;
+  width: 9.2em !important;
+  vertical-align: bottom;
+  background-image: url(../../assets/images/test3.gif);
+  background-position: 50% 0%;
+}
+
+.veryLast p {
+  font-size: 7em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
+.popup h1 {
+  margin: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+  cursor: pointer;
+}
+
+.popup .content {
+  overflow: auto;
+  font-size: larger;
+  display: inline-block;
+}
+
+.popup .content .numberContainer {
+  -webkit-transform: scale(60%);
+          transform: scale(60%);
+  margin: -15px;
+  vertical-align: -50%;
+}
+
+.popup .colorBar {
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=roulette-number.component.css.map */

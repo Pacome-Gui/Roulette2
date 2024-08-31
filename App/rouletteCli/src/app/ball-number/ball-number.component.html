@@ -1,0 +1,18 @@
+
+<div class="ballContainer hotContainer">
+    <div id="hot" class="ball hot {{mostNumbers[0].color}}">
+        <span class="number">{{mostNumbers[0].number}}</span>
+    </div>
+    <div id="hot" *ngFor="let ball of mostNumbers.slice(-mostNumbers.length+1); let i = index" class="ball small hot {{ball.color}}" style="--size: {{  45 *  (mostNumbers.length - i) /mostNumbers.length +15 }}px; --sizeNum: {{  27 *  (mostNumbers.length - i) /mostNumbers.length +10 }}px">
+        <span class="number">{{ball.number}}</span>
+    </div>
+</div>
+<br>
+<div class="ballContainer coldContainer">
+    <div id="cold" class="ball cold {{lessNumbers[0].color}}">
+        <span class="number">{{lessNumbers[0].number}}</span>
+    </div>
+    <div id="cold" *ngFor="let ball of lessNumbers.slice(-lessNumbers.length+1); let i = index" class="ball small cold {{ball.color}}" style="--size: {{  45 *  (lessNumbers.length - i) /lessNumbers.length +15 }}px; --sizeNum: {{  27 *  (lessNumbers.length - i) /lessNumbers.length +10 }}px">
+        <span class="number">{{ball.number}}</span>
+    </div>
+</div>

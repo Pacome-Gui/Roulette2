@@ -1,0 +1,51 @@
+
+.messageContainer {
+    background-color: rgba(255, 255, 255, 0.456);
+    width: 75%;
+    height: var(--containerheigth);
+    position: absolute;
+    left: 12.5%;
+    display: flex;
+    overflow: hidden;
+    padding: 0 10px;
+    border-radius: 0px 0px 20px 20px;
+
+    border-right-color: rgba(0, 0, 0, 0.888);
+    border-bottom-color: rgba(0, 0, 0, 0.888);
+    border-left-color: rgba(0, 0, 0, 0.888);
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+
+    transition-duration: 1.5s;
+}
+
+.message {
+    white-space: nowrap;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    margin: auto auto;
+  
+}
+
+.animate {
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(0, 0);
+      }
+    100% {
+      transform: translate(-110%, 0);
+    }
+  }

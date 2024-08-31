@@ -1,0 +1,72 @@
+<div class="container">
+    <table>
+        <tbody>
+            <tr class="vertical">
+                <td class="no-border" rowspan="3">
+                    <tr><td style="--opacity: {{ renderNumber('00') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('00') == 0.3" class="green zero"><p>00</p></td></tr>
+                    <tr><td style="--opacity: {{ renderNumber('0') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('0') == 0.3" class="green zero"><p>0</p></td></tr>
+                </td>
+                <td style="--opacity: {{ renderNumber('3') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('3') == 0.3" class="red"><p>3</p></td>
+                <td style="--opacity: {{ renderNumber('6') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('6') == 0.3" class="black"><p>6</p></td>
+                <td style="--opacity: {{ renderNumber('9') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('9') == 0.3" class="red"><p>9</p></td>
+                <td style="--opacity: {{ renderNumber('12') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('12') == 0.3" class="red"><p>12</p></td>
+                <td style="--opacity: {{ renderNumber('15') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('15') == 0.3" class="black"><p>15</p></td>
+                <td style="--opacity: {{ renderNumber('18') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('18') == 0.3" class="red"><p>18</p></td>
+                <td style="--opacity: {{ renderNumber('21') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('21') == 0.3" class="red"><p>21</p></td>
+                <td style="--opacity: {{ renderNumber('24') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('24') == 0.3" class="black"><p>24</p></td>
+                <td style="--opacity: {{ renderNumber('27') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('27') == 0.3" class="red"><p>27</p></td>
+                <td style="--opacity: {{ renderNumber('30') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('30') == 0.3" class="red"><p>30</p></td>
+                <td style="--opacity: {{ renderNumber('33') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('33') == 0.3" class="black"><p>33</p></td>
+                <td style="--opacity: {{ renderNumber('36') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('36') == 0.3" matTooltipClass="myTest-tooltip" class="red"><p>36</p></td>
+                <td style="--opacity: {{ renderTwoToOne(firstRow) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderTwoToOne(firstRow) == 0.3" class="smaller green"><p>2 to 1</p></td>
+            </tr>
+            <tr class="vertical">
+                <td style="--opacity: {{ renderNumber('2') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('2') == 0.3" class="black"><p>2</p></td>
+                <td style="--opacity: {{ renderNumber('5') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('5') == 0.3" class="red"><p>5</p></td>
+                <td style="--opacity: {{ renderNumber('8') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('8') == 0.3" class="black"><p>8</p></td>
+                <td style="--opacity: {{ renderNumber('11') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('11') == 0.3" class="black"><p>11</p></td>
+                <td style="--opacity: {{ renderNumber('14') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('14') == 0.3" class="red"><p>14</p></td>
+                <td style="--opacity: {{ renderNumber('17') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('17') == 0.3" class="black"><p>17</p></td>
+                <td style="--opacity: {{ renderNumber('20') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('20') == 0.3" class="black"><p>20</p></td>
+                <td style="--opacity: {{ renderNumber('23') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('23') == 0.3" class="red"><p>23</p></td>
+                <td style="--opacity: {{ renderNumber('26') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('26') == 0.3" class="black"><p>26</p></td>
+                <td style="--opacity: {{ renderNumber('29') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('29') == 0.3" class="black"><p>29</p></td>
+                <td style="--opacity: {{ renderNumber('32') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('32') == 0.3" class="red"><p>32</p></td>
+                <td style="--opacity: {{ renderNumber('35') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('35') == 0.3" class="black"><p>35</p></td>
+                <td style="--opacity: {{ renderTwoToOne(secondRow) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderTwoToOne(secondRow) == 0.3" class="smaller green"><p>2 to 1</p></td>
+            </tr>
+            <tr class="vertical">
+                <td style="--opacity: {{ renderNumber('1') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('1') == 0.3" class="red"><p>1</p></td>
+                <td style="--opacity: {{ renderNumber('4') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('4') == 0.3" class="black"><p>4</p></td>
+                <td style="--opacity: {{ renderNumber('7') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('7') == 0.3" class="red"><p>7</p></td>
+                <td style="--opacity: {{ renderNumber('10') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('10') == 0.3" class="black"><p>10</p></td>
+                <td style="--opacity: {{ renderNumber('13') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('13') == 0.3" class="black"><p>13</p></td>
+                <td style="--opacity: {{ renderNumber('16') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('16') == 0.3" class="red"><p>16</p></td>
+                <td style="--opacity: {{ renderNumber('19') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('19') == 0.3" class="red"><p>19</p></td>
+                <td style="--opacity: {{ renderNumber('22') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('22') == 0.3" class="black"><p>22</p></td>
+                <td style="--opacity: {{ renderNumber('25') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('25') == 0.3" class="red"><p>25</p></td>
+                <td style="--opacity: {{ renderNumber('28') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('28') == 0.3" class="black"><p>28</p></td>
+                <td style="--opacity: {{ renderNumber('31') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('31') == 0.3" class="black"><p>31</p></td>
+                <td style="--opacity: {{ renderNumber('34') }}" #tooltip="matTooltip" matTooltip="x36" [matTooltipDisabled]="renderNumber('34') == 0.3" class="red"><p>34</p></td>
+                <td style="--opacity: {{ renderTwoToOne(thirdRow) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderTwoToOne(thirdRow) == 0.3" class="smaller green"><p>2 to 1</p></td>
+            </tr>
+            <tr class="small">
+                <td class="no-border"></td>
+                <td style="--opacity: {{ renderBetween(1, 12) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderBetween(1,12) == 0.3" class="green" colspan="4">1 to 12</td>
+                <td style="--opacity: {{ renderBetween(13, 24) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderBetween(13, 24) == 0.3" class="green" colspan="4">13 to 24</td>
+                <td style="--opacity: {{ renderBetween(25, 36) }}" #tooltip="matTooltip" matTooltip="x2" [matTooltipDisabled]="renderBetween(25, 36) == 0.3" class="green" colspan="4">25 to 36</td>
+                <td class="no-border"></td>
+            </tr>
+            <tr class="smaller">
+                <td class="no-border"></td>
+                <td style="--opacity: {{ renderBetween(1, 18) }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="renderBetween(1, 18) == 0.3" class="green" colspan="2">1 to 18</td>
+                <td style="--opacity: {{ renderEven() }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="renderEven() == 0.3" class="green" colspan="2">EVEN</td>
+                <td style="--opacity: {{ toOpacity(lastNumber.color == 'RED') }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="lastNumber.color != 'RED'" class="red" colspan="2">RED</td>
+                <td style="--opacity: {{ toOpacity(lastNumber.color == 'BLACK') }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="lastNumber.color != 'BLACK'" class="black" colspan="2">BLACK</td>
+                <td style="--opacity: {{ renderOdd() }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="renderOdd() == 0.3" class="green" colspan="2">ODD</td>
+                <td style="--opacity: {{ renderBetween(19, 36) }}" #tooltip="matTooltip" matTooltip="x1" [matTooltipDisabled]="renderBetween(19, 36) == 0.3" class="green" colspan="2">19 to 36</td>
+                <td class="no-border"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

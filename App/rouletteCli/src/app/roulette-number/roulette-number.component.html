@@ -1,0 +1,22 @@
+
+<div class="numberContainer veryLast" (click)="getNumberPopup(numbersToDisplay[0])" style="--colorNumber: {{ numbersToDisplay[0].color }}">
+    <p>{{ numbersToDisplay[0].number }}</p>
+</div>
+<div *ngFor="let value of lastNumbers()" class="numberContainer" (click)="getNumberPopup(value)" style="--colorNumber: {{ value.color }}">
+	<p>{{ value.number }}</p>
+</div>
+
+<div class="overlay" *ngIf="popup" (click)="popup = false">
+	<div class="popup">
+		<h1>{{selectedNumber?.number}}</h1>
+		<a class="close" (click)="popup = false">&times;</a>
+		<div class="colorBar" style="background-color: {{ selectedNumber?.color }}"></div>
+		<div class="content">
+		Le 
+		<div class="numberContainer" style="--colorNumber: {{ selectedNumber?.color }}">
+			<p> {{selectedNumber?.number}} </p>
+		</div>
+		 est sorti {{selectedCount}} fois sur {{numbers.length}} tirages ({{(selectedCount/numbers.length*100).toFixed(4)}}%)
+		</div>
+	</div>
+</div>

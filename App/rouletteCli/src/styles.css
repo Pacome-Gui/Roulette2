@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  overflow: hidden;
+  background: no-repeat url(./assets/images/background.png);
+  margin-top: 0;
+}
+
+.water {
+  position: absolute;
+  left: -40px;
+  top: 572px;
+}
+
+.fire {
+  position: absolute;
+  left: -40px;
+  top: 468px;
+}
+/*# sourceMappingURL=styles.css.map */

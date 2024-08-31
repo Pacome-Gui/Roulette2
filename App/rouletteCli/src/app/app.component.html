@@ -1,0 +1,23 @@
+<app-message/>
+<div class="lastNumbers">
+  <app-roulette-number [numbersToDisplay]="numbersToDisplay" [numbers]="numbers"/>
+</div>
+
+<div class="img">
+  <img class="image rotate" src="../assets/images/roulette.png">
+</div>
+<div class="stat">
+  <app-roulette-stat class="" [redOdd]="redOdd" [blackOdd]="blackOdd"/>
+</div>
+
+<div style="display: inline-flex">
+  <app-ball-number [mostNumbers]="mostNumbers" [lessNumbers]="lessNumbers"></app-ball-number>
+
+  <div class="stat">
+    <app-tapis class="" [lastNumber]="numbersToDisplay[0]"/>
+  </div>
+</div>
+<div class="time">
+  <p>{{ now }}</p>
+</div>
+

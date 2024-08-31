@@ -1,0 +1,126 @@
+.ball {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    border-radius: 50%;
+    //position: absolute;
+    right: 334px;
+
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ball:before {
+    content: "";
+    //position: absolute;
+
+    border-radius: 50%;
+    bottom: 2.5%;
+    left: 5%;
+    opacity: 0.6;
+    height: 100%;
+    width: 90%;
+    -webkit-filter: blur(5px);
+    z-index: 2;
+  }
+  .ball:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    //position: absolute;
+    top: 5%;
+    left: 10%;
+    border-radius: 50%;
+    
+    -webkit-transform: translateX(-27px) translateY(-30px) skewX(-20deg);
+    -moz-transform: translateX(-27px) translateY(-30px) skewX(-20deg);
+    -ms-transform: translateX(-27px) translateY(-30px) skewX(-20deg);
+    -o-transform: translateX(-27px) translateY(-30px) skewX(-20deg);
+    transform: translateX(-27px) translateY(-30px) skewX(-20deg);
+    -webkit-filter: blur(10px);
+  }
+  
+  .ball .number {
+    color: white;
+    font-weight: 1000;
+    font-size: 45px;
+  }
+
+  .BLACK {
+    background: radial-gradient(circle at 50% 120%,  #323232, #0a0a0a 80%, #000000 100%);
+  }
+  .BLACK:after {
+    background: radial-gradient(circle at 50% 50%,  rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  }
+
+  .BLACK::before {
+    background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  }
+
+  .RED {
+    background: radial-gradient(circle at 50% 120%,  #ff0000, rgb(215, 15, 15) 80%, #760e0e 100%);
+  }
+
+  .RED:after {
+    background: radial-gradient(circle at 50% 50%,  rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  }
+
+  .RED::before {
+    background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  }
+
+  .GREEN {
+    background: radial-gradient(circle at 50% 120%,  #0c7012, green 80%, #095503 100%);
+  }
+  .GREEN:after {
+    background: radial-gradient(circle at 50% 50%,  rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  }
+
+  .GREEN::before {
+    background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  }
+
+  .hot {
+    top:475px;
+    filter: sepia(97%) hue-rotate(0deg) saturate(900%);
+  }
+  .cold {
+    top: 568px;
+    filter: sepia(90%) hue-rotate(190deg) saturate(500%);
+  }
+
+
+  .ballContainer {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid #313232;
+    margin: 10px;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .small {
+    margin-top: auto;
+    height: var(--size);    
+    width: var(--size);
+    margin-left: 7px;
+  }
+  .small .number {
+    font-size: var(--sizeNum);
+  }
+
+  .hotContainer {
+    background-color: #E67E2240;
+  }
+
+  .coldContainer {
+    background-color: #3BD4FA40;
+  }
+
+
+  

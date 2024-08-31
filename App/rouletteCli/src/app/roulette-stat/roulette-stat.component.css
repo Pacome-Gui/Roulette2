@@ -1,0 +1,52 @@
+.oddBarContainer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 1em;
+}
+
+.oddBar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 4em;
+  width: 35em;
+  margin: 0 1em;
+  background-color: #008000E0;
+  border-radius: 5em;
+  overflow: hidden;
+}
+
+.redOdd {
+  background-color: red;
+  height: 4em;
+  width: var(--redWidth);
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+.blackOdd {
+  margin-left: auto;
+  height: 4em;
+  width: var(--blackWidth);
+  background-color: black;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+.oddNumbers {
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5em;
+}
+
+.right {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+/*# sourceMappingURL=roulette-stat.component.css.map */
